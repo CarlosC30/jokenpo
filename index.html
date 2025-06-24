@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Jokenpô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="conteiner">
+
+        <h1>Jogo Jokenpô</h1>
+
+        <div class="buttons">
+            <button id="pedra" onclick="playHuman('pedra')" id="pedra">&#x1F44A;</button>
+            <button id="papel" onclick="playHuman('papel')" id="papel">&#x1F91A;</button>
+            <button id="tesoura" onclick="playHuman('tesoura')" id="tesoura">&#x270C;</button>
+            <button id="reset" onclick="resetScores()">Zerar Pontuação</button>
+        </div>
+
+        <div class="Resultado"></div> 
+      
+        <div class="your-score">
+            <p>Você: <span id="human-score">0</span></p> 
+        </div>
+        <div class="machine-score">
+            <p>Máquina: <span id="machine-score">0</span></p> 
+        </div>
+    </div>
+
+    <script src="scripts.js"></script> 
+</body>
+</html>
